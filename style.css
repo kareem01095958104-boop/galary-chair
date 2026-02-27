@@ -128,3 +128,27 @@ h1 {
     height: auto;
     border-radius: 10px;
 }
+
+
+
+
+
+
+/* Media Query للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .cards-container {
+        justify-content: center; /* لتوسيط الكروت */
+    }
+
+    .card {
+        flex: 0 1 40%; /* كل كارد ياخد تقريباً نصف الشاشة مع مسافة بين الكروت */
+        margin-bottom: 15px;
+    }
+}
+
+/* Media Query للشاشات الأصغر (موبايلات صغيرة) */
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 90%; /* كارد واحد في الصف */
+    }
+}
