@@ -133,22 +133,25 @@ h1 {
 
 
 
-
-/* Media Query للشاشات الصغيرة */
+/* كود Responsive للكروت */
 @media (max-width: 768px) {
     .cards-container {
-        justify-content: center; /* لتوسيط الكروت */
+        justify-content: space-around; /* يسيب مسافة متساوية بين الكروت */
     }
 
     .card {
-        flex: 0 1 40%; /* كل كارد ياخد تقريباً نصف الشاشة مع مسافة بين الكروت */
-        margin-bottom: 15px;
+        flex: 0 1 45%; /* كل كارد ياخد تقريباً نصف الشاشة */
+        max-width: 40%; /* عشان ما يكبرش */
     }
 }
 
-/* Media Query للشاشات الأصغر (موبايلات صغيرة) */
 @media (max-width: 480px) {
+    .cards-container {
+        justify-content: center;
+    }
+
     .card {
         flex: 0 1 90%; /* كارد واحد في الصف */
+        max-width: 90%;
     }
 }
